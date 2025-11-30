@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Make scripts executable
+      - name: Make scripts executable # comment
         run: |
           chmod +x ci/build-docker-image
           chmod +x ci/docker-build-game
