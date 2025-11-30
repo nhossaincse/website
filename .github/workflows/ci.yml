@@ -4,12 +4,12 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest  # Changed from ubuntu-20.04
     
     steps:
       - uses: actions/checkout@v4
       
-      - name: Make scripts executable # comment
+      - name: Make scripts executable
         run: |
           chmod +x ci/build-docker-image
           chmod +x ci/docker-build-game
